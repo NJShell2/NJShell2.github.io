@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nick's Corner of the Web</title>
+<meta name="description" content="A directory of Nick's projects: Bible tools, a weekly cybersecurity rollup, an Indiana driver's permit practice site, and a browser arcade.">
+<style>
+  :root {
+    --bg: #0f1420;
+    --card: #1a2233;
+    --card-border: #2a3550;
+    --text: #e8ecf4;
+    --muted: #9aa7c2;
+    --accent: #5aa9ff;
+    --accent-2: #ffd166;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 { font-size: 2.4rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+  header h1 .nick { color: var(--accent-2); }
+  header p { color: var(--muted); font-size: 1.1rem; margin: 0; }
+  h2.group { font-size: 1.25rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 2.5rem 0 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+  a.card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  a.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .card .icon { font-size: 1.8rem; }
+  .card h3 { margin: 0.6rem 0 0.4rem; font-size: 1.25rem; }
+  .card h3 .arrow { color: var(--accent); font-weight: normal; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+  footer { text-align: center; margin-top: 3.5rem; color: var(--muted); font-size: 0.95rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1><span class="nick">Nick's</span> Corner of the Web</h1>
+    <p>Everything I've built and shipped, in one place.</p>
+  </header>
+
+  <h2 class="group">Bible tools</h2>
+  <div class="grid">
+    <a class="card" href="https://njshell2.github.io/birthday-verse/">
+      <div class="icon">&#128367;</div>
+      <h3>Birthday Verse <span class="arrow">&rarr;</span></h3>
+      <p>A Bible verse for every day of the year. The month picks the chapter, the day picks the verse. All 366 dates, real verses.</p>
+    </a>
+    <a class="card" href="https://njshell2.github.io/verse-clock/">
+      <div class="icon">&#128336;</div>
+      <h3>Verse Clock <span class="arrow">&rarr;</span></h3>
+      <p>A Bible verse for every minute of the day, tied to your local time. At 3:16 PM you read John 3:16.</p>
+    </a>
+    <a class="card" href="https://njshell2.github.io/swords/">
+      <div class="icon">&#9876;</div>
+      <h3>Swords <span class="arrow">&rarr;</span></h3>
+      <p>A Bible memory card-flip game for groups. First to say the verse wins the round. Perfect for youth group.</p>
+    </a>
+  </div>
+
+  <h2 class="group">Tech</h2>
+  <div class="grid">
+    <a class="card" href="https://njshell2.github.io/patch-tuesday-plus/">
+      <div class="icon">&#128737;</div>
+      <h3>Patch Tuesday Plus <span class="arrow">&rarr;</span></h3>
+      <p>Weekly cybersecurity rollup for IT admins. The week's zero-days, breaches, ransomware, and outages, ranked with actions.</p>
+    </a>
+  </div>
+
+  <h2 class="group">Learning</h2>
+  <div class="grid">
+    <a class="card" href="https://njshell2.github.io/indiana-permit-quest/">
+      <div class="icon">&#128663;</div>
+      <h3>Indiana Permit Quest <span class="arrow">&rarr;</span></h3>
+      <p>Driver's permit practice quizzes built only from the Indiana Driver's Manual. 271 questions, streaks, XP, and fix-it rounds.</p>
+    </a>
+  </div>
+
+  <h2 class="group">Fun</h2>
+  <div class="grid">
+    <a class="card" href="https://njshell2.github.io/game-arcade/">
+      <div class="icon">&#127918;</div>
+      <h3>Neon Arcade <span class="arrow">&rarr;</span></h3>
+      <p>Six fully playable classics in the browser against an adaptive AI: chess, checkers, Connect 4, Gomoku, tic-tac-toe, and Monopoly.</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>Built and shipped by <a href="https://github.com/NJShell2">NJShell2</a> on GitHub Pages.</p>
+  </footer>
+
+</div>
+</body>
+</html>
